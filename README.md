@@ -1,4 +1,5 @@
 # Django_learn
+## Python version --> 3.12.3 or 3.12.4
 ### create django PROJECT
     django-admin startproject MyProject
 ### create django App

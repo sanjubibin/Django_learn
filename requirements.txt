@@ -1,0 +1,11 @@
+numpy==1.26.4
+opencv-python==4.10.0.82
+pillow==10.3.0
+pyaadhaar==2.0.2
+pylibjpeg==2.0.0
+pylibjpeg-openjpeg==2.2.1
+python-dateutil==2.9.0.post0
+pytz==2024.1
+pyzbar==0.1.9
+six==1.16.0
+toml==0.10.2
