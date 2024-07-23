@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'passlib.ext.django',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +42,11 @@ INSTALLED_APPS = [
 
     'MyApp',
 ]
+
+PASSLIB_CONFIG = {
+    # ... Passlib configuration options
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +63,9 @@ ROOT_URLCONF = 'MyProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'HTML_files',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
